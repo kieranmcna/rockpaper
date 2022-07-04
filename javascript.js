@@ -4,24 +4,23 @@ let Scissors;
 
 // declare base variables
 
-let playerAnswer=prompt("Enter Your Answer:");
+let playerAnswer=prompt("Enter Your Answer:")
 // Prompt user to enter answer for rock paper scissors
+playerAnswer = text.toLocaleLowerCase();
+//convert text input to lowercase
 switch(playerAnswer){
     
     case "rock":
-    text = "Rock beats blah blah blah";
     break;
     
     case "paper":
-    text = "Paper beats blah blah blah";
     break;
 
     case "scissors":
-    text = "Scissors beats blah blah blah";
     break;
     
     default:
-    text ="Please enter a valid selection from Rock, Paper or Scissors"
+    alert(text ="Please enter a valid selection from Rock, Paper or Scissors")
 //Return the above if no selection or an invalid selection is inputted
 }
 
