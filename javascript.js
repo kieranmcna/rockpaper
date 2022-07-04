@@ -3,12 +3,22 @@ let paper;
 let Scissors;
 
 let playerAnswer=prompt("Enter Your Answer:");
-switch(playerAnswer_{
+switch(playerAnswer)_{
+    
     case "rock":
     text = "Rock beats blah blah blah";
     break;
-    case "paper":
     
+    case "paper":
+    text = "Paper beats blah blah blah";
+    break;
+
+    case "Scissors"
+    text = "Scissors beats blah blah blah";
+    break;
+    
+    default:
+    text ="Please enter a valid selection from Rock, Paper or Scissors"
 }
 
 
