@@ -39,6 +39,10 @@ function playRound(playerSelection, computerSelection)
 
 
 
+if( computerSelection = "rock" && playerSelection = "scissors"){
+    alert(text ="You Lost, Rock beats Scissors!")
+} else if (computerSelection = "scissors" & playerSelection = "rock")
+
 //
 If computerSelection rock & playerSelection is scissors "You Lost, Rock beats Scissors!"
 If computerSelection scissors & playerSelection is rock "You Win! Rock beats Scissors"
