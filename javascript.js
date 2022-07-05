@@ -1,34 +1,41 @@
-function computerPlay() {
+function computerSelection() {
     let values = ["rock", "scissors", "paper"],
         // declare values computer can select
-        computerSelection = values[Math.floor(Math.random() * values.length)];
+        selection = values[Math.floor(Math.random() * values.length)];
     // Get computer selection at random from declared values
+    return selection;
 }
 
-function playerSelection() {
-    let playerAnswer = prompt("Enter Your Answer:")
+function playerSelection(message = "Enter Your Answer"){
+    let playerAnswer = prompt(message);
     // Prompt user to enter answer for rock paper scissors
     playerAnswer = playerAnswer.toLocaleLowerCase();
     //convert text input to lowercase
     switch (playerAnswer) {
 
         case "rock" || "paper" || "scissors":
-            break;
-
+            return playerAnswer;
+            
         default:
-            alert(text = "Please enter a valid selection from Rock, Paper or Scissors")
+            return playerSelection("Please enter a valid selection from Rock, Paper or Scissors");
         //Return the above if no selection or an invalid selection is inputted
     }
 
 
 }
 
-function playRound(playerSelection, computerSelection) {
+function playRound(playerSelection, computerSelection) 
+
+{ if( computerSelection = "rock" && playerSelection = "scissors"){
+   return text ="You Lost, Rock beats Scissors!")
+ } else if (computerSelection = "scissors" & playerSelection = "rock")
+
+    return "Computer Wins"
 }
 
 function game() {
     for (let i = 0; i < 5; i++) {
-        playRound(playerAnswer,)
+console.log(playRound(playerSelection(), computerSelection()))
     }
 }
 
